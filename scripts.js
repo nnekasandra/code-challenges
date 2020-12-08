@@ -13,11 +13,12 @@
             //for loop loops through second item in strArr
             if(elem1[i] === elem2[j]){
               //if statement checks for items in the elem1 and elem2 that are equal
-              intersectingNumbers.push(elem1[i],elem2[j])//logs the equal items to the console
+               intersectingNumbers.push(elem1[i])//logs the equal items to the console
             }
            }
           }
           elem1 = elem1.join(',')
           elem2 = elem2.join(',')
+          return intersectingNumbers.join()
       }
-      console.log(findIntersection(['1,3,4,16,0','5,6,7,8,9']))
+      console.log(findIntersection(['1,3,4,6,5,8','5,6,7,8,9']))
