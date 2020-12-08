@@ -19,7 +19,5 @@
           }
           elem1 = elem1.join(',')
           elem2 = elem2.join(',')
-          let result= intersectingNumbers.split(',')
-          return result
       }
       console.log(findIntersection(['1,3,4,16,0','5,6,7,8,9']))
