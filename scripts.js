@@ -13,12 +13,14 @@
             //for loop loops through second item in strArr
             if(elem1[i] === elem2[j]){
               //if statement checks for items in the elem1 and elem2 that are equal
-               intersectingNumbers.push(elem1[i])//logs the equal items to the console
+               intersectingNumbers.push(elem1[i])//pushes elem1 items that are equal to elem2 items to the intersectingNumbers array created
             }
            }
           }
-          elem1 = elem1.join(',')
-          elem2 = elem2.join(',')
-          return intersectingNumbers.join()
+        if (intersectingNumbers.length==0)//if statement that checks for when intersectingNumbers array is empty
+        {
+           intersectingNumbers == false //sets the output to be equal to false
+        }
+          return intersectingNumbers.join() //returns intersectingNumbers array to form a string
       }
-      console.log(findIntersection(['1,3,4,6,5,8','5,6,7,8,9']))
+      console.log(findIntersection(['1,3,4,0','5,6,7,8,9'])) //calls the function and logs it to the console
