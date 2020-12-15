@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Grade Calculator</title>
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+    /*A program that accepts a score and grades it */
+      var score = parseInt(prompt ('Enter Score')); // prompts the user to enter score which is a number data type and is stored to the score variable
+      
+      /*if statement to checks for different conditions and gives an output based on a condition that is true*/
+      if(score >0 ){
+        /*if statement to check if the user entered a valid score*/
+        alert ('Your Grade is on the way') // alerts this statement to the user if the score entered was valid
+        if(score >= 70){
+          // if statement checks if when the score entered is greater than or equal to 70
+          alert ('Grade A') //alerts this statement to the user if the if condition is true
+        }else if(score >= 60){
+             //else if block checks for when the score is greater than or equal to 60
+          alert ('Grade B') // alerts this statement to the user if the condition in this else if block is true
+        }else if (score>= 50){
+                  //else if block checks for when the score is greater than or equal to 50
+          alert ('Grade C') // alerts this statement to the user if the condition in this else if block is true
+        }else if (score>=45){
+          //else if block checks for when the score is greater than or equal to 45
+          alert ('Grade D')// alerts this statement to the user if the condition in this else if block is true
+        }else{
+          // runs if none of the if statement conditions are true
+          alert('Grade F') // alerts this statement to the user if none of the conditions is true
+        }
+      }else{
+        alert ('Please Enter a ValidScore')//alerts this statement to the user if the score entered is not valid
+      }
+    </script>
+  </body>
+</html>
