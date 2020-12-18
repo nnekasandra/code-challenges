@@ -7,30 +7,32 @@
   <body>
     <script type="text/javascript" charset="utf-8">
     /*A program that accepts a score and grades it */
-      var score = parseInt(prompt ('Enter Score')); // prompts the user to enter score which is a number data type and is stored to the score variable
-      
-      /*if statement to checks for different conditions and gives an output based on a condition that is true*/
-      if(score >0 ){
-        /*if statement to check if the user entered a valid score*/
-        alert ('Your Grade is on the way') // alerts this statement to the user if the score entered was valid
-        if(score >= 70){
-          // if statement checks if when the score entered is greater than or equal to 70
-          alert ('Grade A') //alerts this statement to the user if the if condition is true
-        }else if(score >= 60){
-             //else if block checks for when the score is greater than or equal to 60
-          alert ('Grade B') // alerts this statement to the user if the condition in this else if block is true
-        }else if (score>= 50){
-                  //else if block checks for when the score is greater than or equal to 50
-          alert ('Grade C') // alerts this statement to the user if the condition in this else if block is true
-        }else if (score>=45){
-          //else if block checks for when the score is greater than or equal to 45
-          alert ('Grade D')// alerts this statement to the user if the condition in this else if block is true
-        }else{
-          // runs if none of the if statement conditions are true
-          alert('Grade F') // alerts this statement to the user if none of the conditions is true
-        }
+      var score = parseFloat(prompt('Enter Score'))//The program statement prompts the user to input their score which is a number data type and is stored to the score variable
+      /*if statement to check for different conditions and gives and output based on the condition*/
+      if(score >= 70){
+        //if statement checks for when score is greater than or equal to 70
+        alert ('Grade A')//alerts this statement to the user if the condition is true
       }else{
-        alert ('Please Enter a ValidScore')//alerts this statement to the user if the score entered is not valid
+        // else block runs if the first if condition is not true
+        if(score >= 60){
+          //if statement checks for when score is greater than or equal to 60
+          alert ('Grade B')//alerts thus statement if this if condition is true
+        }else{
+          //else block runs if the second if condition is true
+          if (score >= 50){
+            //if condition that checks for when the score is greater than or equal to 50
+            alert ('Grade C')//alerts this statement if this if statement is true
+          }else{
+            // else block runs if the third if statement is not true
+            if(score >= 45){
+              //if condition that checks for when the score is greater than or equal to 45
+              alert ('Grade D')//alerts this statement if this if statement is true
+            }else{
+              // this else block runs if none of the if statements is true
+              alert ('Grade F')// alerts this statement if none of the conditions are true
+            }
+          }
+        }
       }
     </script>
   </body>
