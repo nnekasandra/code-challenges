@@ -6,33 +6,28 @@
   </head>
   <body>
     <script type="text/javascript" charset="utf-8">
-    /*A program that accepts a score and grades it */
-      var score = parseFloat(prompt('Enter Score'))//The program statement prompts the user to input their score which is a number data type and is stored to the score variable
-      /*if statement to check for different conditions and gives and output based on the condition*/
-      if(score >= 70){
-        //if statement checks for when score is greater than or equal to 70
-        alert ('Grade A')//alerts this statement to the user if the condition is true
-      }else{
-        // else block runs if the first if condition is not true
-        if(score >= 60){
-          //if statement checks for when score is greater than or equal to 60
-          alert ('Grade B')//alerts thus statement if this if condition is true
-        }else{
-          //else block runs if the second if condition is true
-          if (score >= 50){
-            //if condition that checks for when the score is greater than or equal to 50
-            alert ('Grade C')//alerts this statement if this if statement is true
-          }else{
-            // else block runs if the third if statement is not true
-            if(score >= 45){
-              //if condition that checks for when the score is greater than or equal to 45
-              alert ('Grade D')//alerts this statement if this if statement is true
-            }else{
-              // this else block runs if none of the if statements is true
-              alert ('Grade F')// alerts this statement if none of the conditions are true
-            }
-          }
-        }
+    /*A program that accepts a Grade and remarks the grade */
+      let grade = prompt ('Your Grade:')// this program prompts user to enter their grade stored in the grade variable which holds a string datatype
+      switch (grade){
+        //switch statement to check for different cases inputted in the grade prompt
+        case 'A': // checks for when 'A' is inputted as the grade
+          alert('Excellent Result Keep it up')// alerts this statement if 'A' is inputted as grade
+          break; // ends the switch statement for case 'A'
+        case 'B': //checks for when 'B'is inputted as the grade
+          alert ('Very Good')// alerts this statement if 'B' is inputted as grade
+          break; // ends the switch statement for case 'B'
+        case 'C'://checks for when 'C' is inputted as the grade
+          alert ('Good')// alerts this statement if 'C' is inputted as grade
+          break; // ends the switch statement for case 'C'
+        case 'D': //checks for when 'D' is inputted as the grade
+          alert('Fair! There\'s still room for improvement')// alerts this statement if 'D' is inputted as grade
+          break; // ends the switch statement for case 'D'
+        case 'F': //checks for when 'F' is inputted as the grade
+          alert ('Failed! But that\'s not the end. Try harder next time')// alerts this statement if 'F' is inputted as grade
+          break; // ends the switch statement for case 'F'
+        default: // this runs if none of the cases above is true
+          alert ('Please Enter grade')//alerts this statement if none of the grade match the cases for this switch statement
+        
       }
     </script>
   </body>
