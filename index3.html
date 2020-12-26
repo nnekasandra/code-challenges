@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+       /*A program that reverses an array of numbers using while loops*/
+    function reverseArray(arr){
+      /*reverseArray function to reverse reverse an array of numbers*/
+           while(arr.length != 0){
+             //while loop to run when the array length is not equal to 0
+             let lastItem = arr.pop()//created a variable to hold the last item in the array 
+             let poppedItem = [];//created a variable poppedItem to hold an empty array
+             let reversed = poppedItem.push(lastItem)//created a variable reversed to push the array popped off from lastItem variable into the poppedItem empty array 
+             return reversed // returns reversed
+           }
+       }
+       console.log(reverseArray([1,2,3,4,7,8]))//calls the function and logs it to the console
+    </script>
+  </body>
+</html>
