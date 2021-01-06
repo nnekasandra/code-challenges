@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title>Array Sorting</title>
+  </head>
+  <body>
+      <h1>Array</h1>
+    <script type="text/javascript" charset="utf-8">
+      /A program that takes in an array and sorts it in ascending order/
+      function sortArray(arr){
+        /A function that takes in an array and sorts it in ascending order/
+        var sorted = []; //created an empty array and saved it to the sorted variable
+        var index = 0; // created a variable to hold the index of each item
+          while(index < arr.length){
+            //while loop to loop through the items of the arr array
+            var minimumNumber = Math.min(...arr)//Math.min(..arr) is used to target the minimum number in the array and saves it to minimumNumber variable
+            if(index == minimumNumber)
+            //if statement checks for when the number at that particular index is equal to the minimum number
+            {
+              let min = arr.splice(index,minimumNumber)
+              //removes the minimum number at that particular index and saves it to the min variable
+              sorted.push(min)// pushes min to the sorted empty array created initially
+            }
+            index++ //increments the index
+            }
+          return sorted //returns the sorted array
+        }
+      console.log(sortArray([1,7,9,0,6,20]))
+    </script>
+  </body>
+</html>
