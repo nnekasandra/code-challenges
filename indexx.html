@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title>Array Multiplier</title>
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+    /*A program that multiples each item in an array*/
+      function multiply(arr,multiplier)//multiply function that takes in two argument. The array and the multiplier
+      {
+        var newArr = []; //created an empty array to hold the new array created
+        for(var i = 0; i<arr.length; i++)// for loop to loop through the arr argument in the function
+        {
+          newArr.push(arr[i]*multiplier) //multiplies the arr argument with the multiplier arr and push it to the newArr created
+        }
+        return newArr // function returns newArr
+      }
+      console.log(multiply([2,4,3,9],3)) //calls the function and prints it to the console
+    </script>
+  </body>
+</html>
